@@ -246,7 +246,7 @@
             padding: 40px;
             border-radius: 4px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .chart-container h3 {
@@ -647,6 +647,20 @@
             line-height: 1.8;
         }
 
+
+        /* Chart Captions */
+        .chart-caption {
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #666;
+            font-style: italic;
+            margin-top: 20px;
+            padding: 0 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         /* St. Andrews Advantage Narrative Section */
         .narrative-section {
             background: var(--white);
@@ -1017,6 +1031,20 @@
         </div>
     </div>
 
+    
+    <!-- Introduction to The St. Andrews Advantage -->
+    <div class="section">
+        <div class="container">
+            <div class="narrative-header">
+                <h2>The St. Andrews Advantage: Championship Prestige at Smart Luxury Pricing</h2>
+            </div>
+
+            <div class="narrative-intro">
+                <p>When buyers compare Boca Raton's premier country club communities, they often assume waterfront equals superiority. Our comprehensive market analysis reveals a different story: <strong>St. Andrews Country Club delivers the same social prestige and lifestyle quality as ultra-luxury alternatives—for a fraction of the investment.</strong></p>
+            </div>
+        </div>
+    </div>
+
     <!-- Detailed Comparison -->
     <div class="section section-alt">
         <div class="container">
@@ -1121,27 +1149,46 @@
         </div>
     </div>
 
-    <!-- Charts Section -->
+    <!-- The Prestige Question Narrative -->
     <div class="section">
         <div class="container">
-            <div class="section-header">
-                <h2>Visual Analytics</h2>
-                <p>Interactive charts for deeper market insights</p>
+            <div class="narrative-block">
+                <h3>The Prestige Question: Location vs. Lifestyle</h3>
+                <p>Royal Palm Yacht & Country Club commands premium pricing thanks to its Intracoastal location and deep-water yacht access. The numbers tell the story: average sales prices of $22.8M for waterfront properties and 73% higher price per square foot than St. Andrews.</p>
+                <p>But here's what savvy luxury buyers understand: <strong>prestige in Boca Raton isn't determined by your dock size—it's earned through the quality of your lifestyle.</strong></p>
+                <div class="benefits-list">
+                    <h4>St. Andrews residents enjoy:</h4>
+                    <ul>
+                        <li>Two championship 18-hole golf courses</li>
+                        <li>Guard-gated security and exclusive club amenities</li>
+                        <li>A distinguished social community of affluent professionals and successful retirees</li>
+                        <li>The same Boca Raton country club status that opens doors throughout South Florida</li>
+                    </ul>
+                    <p class="highlight">The difference? You're investing $3M-6M instead of $8M-15M+ for comparable non-waterfront alternatives elsewhere.</p>
+                </div>
             </div>
 
             <!-- Price Comparison Chart -->
             <div class="chart-container">
-                <h3>Average Sale Price Comparison</h3>
+                <h3>How Do the Prices Actually Compare?</h3>
                 <div class="chart-wrapper">
                     <canvas id="priceComparisonChart"></canvas>
                 </div>
+                <div class="chart-caption">St. Andrews delivers luxury country club living at 54% lower average pricing than Royal Palm, while maintaining the same social prestige and lifestyle quality.</div>
             </div>
+        </div>
+    </div>
 
-            <!-- Price per SqFt Chart -->
-            <div class="chart-container">
-                <h3>Price Per Square Foot Analysis</h3>
-                <div class="chart-wrapper">
-                    <canvas id="pricePerSqftChart"></canvas>
+    <!-- Market Velocity Analysis -->
+    <div class="section section-alt">
+        <div class="container">
+            <div class="narrative-block">
+                <h3>What the Market Data Actually Shows</h3>
+                <p>Our analysis of recent sales activity reveals why discerning buyers are choosing St. Andrews:</p>
+                
+                <div class="data-point">
+                    <h4>Market Velocity Signals Value Recognition</h4>
+                    <p>St. Andrews properties average just 103 days on market compared to 159 days at Royal Palm. This 35% faster absorption rate isn't coincidence—it's the market validating St. Andrews' value proposition in real-time.</p>
                 </div>
             </div>
 
@@ -1151,6 +1198,40 @@
                 <div class="chart-wrapper">
                     <canvas id="daysOnMarketChart"></canvas>
                 </div>
+                <div class="chart-caption">St. Andrews homes sell 35% faster on average, demonstrating strong buyer demand and price validation. Faster sales mean less carrying cost and greater market confidence.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inventory Balance Analysis -->
+    <div class="section">
+        <div class="container">
+            <div class="narrative-block">
+                <div class="data-point">
+                    <h4>Balanced Inventory = Price Stability</h4>
+                    <p>With 3.9 months of inventory versus Royal Palm's 10.6 months, St. Andrews operates in the goldilocks zone of supply and demand. This balanced market creates price stability and positions the community for continued appreciation as South Florida attracts wealth migration from high-tax states.</p>
+                </div>
+            </div>
+
+            <!-- Inventory Chart -->
+            <div class="chart-container">
+                <h3>Current Inventory & Market Absorption</h3>
+                <div class="chart-wrapper">
+                    <canvas id="inventoryChart"></canvas>
+                </div>
+                <div class="chart-caption">St. Andrews' 3.9-month inventory level indicates healthy market balance—neither oversupplied nor constrained. Royal Palm's 10.6-month supply suggests softer demand at ultra-luxury price points.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sales Volume Analysis -->
+    <div class="section section-alt">
+        <div class="container">
+            <div class="narrative-block">
+                <div class="data-point">
+                    <h4>Transaction Volume Demonstrates Demand Depth</h4>
+                    <p>St. Andrews generated $146.5M in sales volume, proving this isn't a budget alternative—it's a smart luxury choice backed by consistent buyer demand across multiple price points.</p>
+                </div>
             </div>
 
             <!-- Sales Volume Chart -->
@@ -1159,14 +1240,50 @@
                 <div class="chart-wrapper">
                     <canvas id="salesVolumeChart"></canvas>
                 </div>
+                <div class="chart-caption">Combined $446.5M in transaction volume across both communities demonstrates robust luxury real estate demand in Boca Raton. St. Andrews captured $146.5M with higher transaction frequency.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Value Equation Analysis -->
+    <div class="section">
+        <div class="container">
+            <div class="narrative-block">
+                <h3>The Value Equation That Changes Everything</h3>
+                <p>Consider what you're actually buying in each community:</p>
+                
+                <div class="comparison-boxes">
+                    <div class="comparison-box royal-palm-box">
+                        <h4>At Royal Palm, your premium pays for:</h4>
+                        <ul>
+                            <li>Intracoastal frontage and yacht slips (90'-166')</li>
+                            <li>Average 7,200 square foot estates</li>
+                            <li>Ultra-luxury positioning in the $5M-40M range</li>
+                            <li>10+ months to find the right buyer when you sell</li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-box st-andrews-box">
+                        <h4>At St. Andrews, your investment delivers:</h4>
+                        <ul>
+                            <li>4,800 square feet of well-appointed living space</li>
+                            <li>Championship golf and full country club amenities</li>
+                            <li>The same Boca social standing and lifestyle quality</li>
+                            <li>A market that moves 2.7x faster when you're ready to sell</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="highlight"><strong>The difference?</strong> You're not compromising on prestige—you're choosing smarter capital allocation. The 73% price-per-square-foot premium at waterfront communities buys location, not necessarily better daily living.</p>
             </div>
 
-            <!-- Inventory Levels -->
+            <!-- Price Per SqFt Chart -->
             <div class="chart-container">
-                <h3>Current Inventory & Market Absorption</h3>
+                <h3>Price Per Square Foot Analysis</h3>
                 <div class="chart-wrapper">
-                    <canvas id="inventoryChart"></canvas>
+                    <canvas id="pricePerSqftChart"></canvas>
                 </div>
+                <div class="chart-caption">The 73% price premium at Royal Palm ($1,356/sqft vs. $784/sqft) primarily reflects waterfront location value. For non-boaters, this premium doesn't enhance daily lifestyle quality.</div>
             </div>
         </div>
     </div>
@@ -1174,49 +1291,37 @@
     <!-- Waterfront Analysis -->
     <div class="section section-alt">
         <div class="container">
-            <div class="section-header">
-                <h2>Waterfront Premium Analysis</h2>
-                <p>Comparing waterfront opportunities and pricing in both communities</p>
-            </div>
-
-            <div class="waterfront-grid">
-                <div class="waterfront-card">
-                    <h4>St. Andrews Waterfront</h4>
-                    <div class="big-number">5</div>
-                    <div class="description">Waterfront listings out of 12 active (42%)</div>
-                </div>
-
-                <div class="waterfront-card">
-                    <h4>St. Andrews Waterfront Avg</h4>
-                    <div class="big-number">$4.98M</div>
-                    <div class="description">Average price for waterfront properties</div>
-                </div>
-
-                <div class="waterfront-card">
-                    <h4>Royal Palm Waterfront</h4>
-                    <div class="big-number">15</div>
-                    <div class="description">Waterfront listings out of 31 active (48%)</div>
-                </div>
-
-                <div class="waterfront-card">
-                    <h4>Royal Palm Waterfront Avg</h4>
-                    <div class="big-number">$22.8M</div>
-                    <div class="description">Average price for waterfront properties</div>
-                </div>
+            <div class="narrative-block">
+                <h3>The Waterfront Comparison</h3>
+                <p>For buyers considering waterfront properties specifically, the numbers are even more striking. Royal Palm's waterfront homes average $22.8M versus $4.98M at St. Andrews—a 4.6x difference.</p>
+                <p>Unless you require 90+ foot yacht dockage and direct Intracoastal access, St. Andrews waterfront properties deliver exceptional value. You still enjoy water views and the prestige of waterfront living, but at a price point that makes financial sense for buyers who prioritize lifestyle quality over marina credentials.</p>
             </div>
 
             <!-- Waterfront Chart -->
-            <div class="chart-container" style="margin-top: 40px;">
+            <div class="chart-container">
                 <h3>Waterfront vs Non-Waterfront Pricing</h3>
                 <div class="chart-wrapper">
                     <canvas id="waterfrontChart"></canvas>
                 </div>
+                <div class="chart-caption">St. Andrews waterfront properties offer water views and prestige at $4.98M average versus $22.8M at Royal Palm—a $17.8M savings for buyers who don't need deep-water yacht dockage.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Investment Rationale -->
+    <div class="section">
+        <div class="container">
+            <div class="narrative-block">
+                <h3>Why This Matters for Your Investment</h3>
+                <p>Real estate value isn't just about today's price—it's about tomorrow's appreciation potential. St. Andrews' balanced inventory, strong transaction velocity, and accessible luxury positioning ($2M-10M range) place it perfectly to capture the expanding wealth demographic moving to South Florida.</p>
+                <p>There are exponentially more households with $5M-15M in net worth than those commanding $50M+. As Boca continues attracting successful professionals, entrepreneurs, and retirees from high-tax states, St. Andrews sits in the volume luxury sweet spot where demand consistently meets supply.</p>
+                <p class="highlight">The market data confirms what residents already know: St. Andrews delivers championship country club prestige at pricing that represents genuine value—not just for today's lifestyle, but as a sound long-term investment in one of South Florida's most distinguished communities.</p>
             </div>
         </div>
     </div>
 
     <!-- Key Insights -->
-    <div class="section">
+    <div class="section section-alt">
         <div class="container">
             <div class="section-header">
                 <h2>Key Market Insights</h2>
@@ -1263,107 +1368,17 @@
         </div>
     </div>
 
-
-    <!-- St. Andrews Advantage Narrative -->
-    <div class="section narrative-section">
+    <!-- Final CTA -->
+    <div class="section">
         <div class="container">
-            <div class="narrative-header">
-                <h2>The St. Andrews Advantage: Championship Prestige at Smart Luxury Pricing</h2>
-            </div>
-
-            <div class="narrative-intro">
-                <p>When buyers compare Boca Raton's premier country club communities, they often assume waterfront equals superiority. Our comprehensive market analysis reveals a different story: <strong>St. Andrews Country Club delivers the same social prestige and lifestyle quality as ultra-luxury alternatives—for a fraction of the investment.</strong></p>
-            </div>
-
-            <div class="narrative-content">
-                <div class="narrative-block">
-                    <h3>The Prestige Question: Location vs. Lifestyle</h3>
-                    <p>Royal Palm Yacht & Country Club commands premium pricing thanks to its Intracoastal location and deep-water yacht access. The numbers tell the story: average sales prices of $22.8M for waterfront properties and 73% higher price per square foot than St. Andrews.</p>
-                    <p>But here's what savvy luxury buyers understand: <strong>prestige in Boca Raton isn't determined by your dock size—it's earned through the quality of your lifestyle.</strong></p>
-                    <div class="benefits-list">
-                        <h4>St. Andrews residents enjoy:</h4>
-                        <ul>
-                            <li>Two championship 18-hole golf courses</li>
-                            <li>Guard-gated security and exclusive club amenities</li>
-                            <li>A distinguished social community of affluent professionals and successful retirees</li>
-                            <li>The same Boca Raton country club status that opens doors throughout South Florida</li>
-                        </ul>
-                        <p class="highlight">The difference? You're investing $3M-6M instead of $8M-15M+ for comparable non-waterfront alternatives elsewhere.</p>
-                    </div>
-                </div>
-
-                <div class="narrative-block">
-                    <h3>What the Market Data Actually Shows</h3>
-                    <p>Our analysis of recent sales activity reveals why discerning buyers are choosing St. Andrews:</p>
-                    
-                    <div class="data-point">
-                        <h4>Market Velocity Signals Value Recognition</h4>
-                        <p>St. Andrews properties average just 103 days on market compared to 159 days at Royal Palm. This 35% faster absorption rate isn't coincidence—it's the market validating St. Andrews' value proposition in real-time.</p>
-                    </div>
-
-                    <div class="data-point">
-                        <h4>Balanced Inventory = Price Stability</h4>
-                        <p>With 3.9 months of inventory versus Royal Palm's 10.6 months, St. Andrews operates in the goldilocks zone of supply and demand. This balanced market creates price stability and positions the community for continued appreciation as South Florida attracts wealth migration from high-tax states.</p>
-                    </div>
-
-                    <div class="data-point">
-                        <h4>Transaction Volume Demonstrates Demand Depth</h4>
-                        <p>St. Andrews generated $146.5M in sales volume, proving this isn't a budget alternative—it's a smart luxury choice backed by consistent buyer demand across multiple price points.</p>
-                    </div>
-                </div>
-
-                <div class="narrative-block">
-                    <h3>The Value Equation That Changes Everything</h3>
-                    <p>Consider what you're actually buying in each community:</p>
-                    
-                    <div class="comparison-boxes">
-                        <div class="comparison-box royal-palm-box">
-                            <h4>At Royal Palm, your premium pays for:</h4>
-                            <ul>
-                                <li>Intracoastal frontage and yacht slips (90'-166')</li>
-                                <li>Average 7,200 square foot estates</li>
-                                <li>Ultra-luxury positioning in the $5M-40M range</li>
-                                <li>10+ months to find the right buyer when you sell</li>
-                            </ul>
-                        </div>
-
-                        <div class="comparison-box st-andrews-box">
-                            <h4>At St. Andrews, your investment delivers:</h4>
-                            <ul>
-                                <li>4,800 square feet of well-appointed living space</li>
-                                <li>Championship golf and full country club amenities</li>
-                                <li>The same Boca social standing and lifestyle quality</li>
-                                <li>A market that moves 2.7x faster when you're ready to sell</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <p class="highlight"><strong>The difference?</strong> You're not compromising on prestige—you're choosing smarter capital allocation. The 73% price-per-square-foot premium at waterfront communities buys location, not necessarily better daily living.</p>
-                </div>
-
-                <div class="narrative-block">
-                    <h3>The Waterfront Comparison</h3>
-                    <p>For buyers considering waterfront properties specifically, the numbers are even more striking. Royal Palm's waterfront homes average $22.8M versus $4.98M at St. Andrews—a 4.6x difference.</p>
-                    <p>Unless you require 90+ foot yacht dockage and direct Intracoastal access, St. Andrews waterfront properties deliver exceptional value. You still enjoy water views and the prestige of waterfront living, but at a price point that makes financial sense for buyers who prioritize lifestyle quality over marina credentials.</p>
-                </div>
-
-                <div class="narrative-block">
-                    <h3>Why This Matters for Your Investment</h3>
-                    <p>Real estate value isn't just about today's price—it's about tomorrow's appreciation potential. St. Andrews' balanced inventory, strong transaction velocity, and accessible luxury positioning ($2M-10M range) place it perfectly to capture the expanding wealth demographic moving to South Florida.</p>
-                    <p>There are exponentially more households with $5M-15M in net worth than those commanding $50M+. As Boca continues attracting successful professionals, entrepreneurs, and retirees from high-tax states, St. Andrews sits in the volume luxury sweet spot where demand consistently meets supply.</p>
-                    <p class="highlight">The market data confirms what residents already know: St. Andrews delivers championship country club prestige at pricing that represents genuine value—not just for today's lifestyle, but as a sound long-term investment in one of South Florida's most distinguished communities.</p>
-                </div>
-
-                <div class="narrative-cta">
-                    <h3>Ready to Explore St. Andrews Country Club?</h3>
-                    <p>The Edmund Bogen Team specializes in Boca Raton's premier country club communities. Whether you're comparing luxury options or ready to make your move, we provide the market intelligence and negotiation expertise that protects your investment.</p>
-                    <p><strong>Contact The Edmund Bogen Team at Douglas Elliman Real Estate to schedule your private tour of St. Andrews Country Club.</strong></p>
-                    <p class="disclaimer"><em>Market data reflects recent transaction analysis and current inventory levels. All figures are subject to change based on market conditions.</em></p>
-                </div>
+            <div class="narrative-cta">
+                <h3>Ready to Explore St. Andrews Country Club?</h3>
+                <p>The Edmund Bogen Team specializes in Boca Raton's premier country club communities. Whether you're comparing luxury options or ready to make your move, we provide the market intelligence and negotiation expertise that protects your investment.</p>
+                <p><strong>Contact The Edmund Bogen Team at Douglas Elliman Real Estate to schedule your private tour of St. Andrews Country Club.</strong></p>
+                <p class="disclaimer"><em>Market data reflects recent transaction analysis and current inventory levels. All figures are subject to change based on market conditions.</em></p>
             </div>
         </div>
     </div>
-
     <!-- CTA Section -->
     <div class="cta-section">
         <div class="container">
